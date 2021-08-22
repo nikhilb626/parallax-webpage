@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Raleway:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    overflow-x:hidden;
+}
+.bg1{
+    height: 100vh;
+    width: 100vw;
+    background: url('tiger1.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg2{
+    height: 400px;
+    width: 100vw;
+    background: url('tiger2.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.bg3{
+    height: 100vh;
+    width: 100vw;
+    background: url('tiger3.jpg') center center no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+
+}
+body::-webkit-scrollbar{
+    appearance: none;
+    background: black;
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:orangered;
+    border-radius: 10px;
+}
+
+.save-tigers{
+    height: fit-content;
+    position: absolute;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    line-height: 65px;
+    top: 50vh;
+    right:100px;
+    font-family: 'Cinzel Decorative', cursive;
+    transform:translateY(-50%);
+    transition: all .5s ease;
+}
+
+wow{
+    font-size: 80px;
+}
+
+
+.links a{
+    text-decoration: none;
+    /* padding: 10rem; */
+    font-family: "Raleway",sans-serif;
+    text-align: left;
+    font-size: 23px;
+}
+
+.links{
+    position: absolute;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 50vh;
+    transform: translateY(-50%);
+    left: 25px;
+    transition: all .5s ease;
+
+}
+
+footer{
+    padding: 20px 40px;
+    font-family: "Raleway",sans-serif;
+    background: black;
+    text-align:center;
+    width: 100vw;
+    
+}
+
+.bg3 .text{
+    position: relative;
+    height: fit-content;
+    max-width: 250px;
+   margin: auto;
+   text-align: center;
+   font-family: "Raleway",sans-serif;
+     top: 40%;
+
+
+}
+@media(max-width: 800px) and (min-width: 500px){
+    .save-tigers{
+        right: 25%;
+    }
+    .links{
+        top:10vh;
+        left:unset;
+        right: 1px;
+    }
+}
+
+@media(max-width: 500px) and (min-width: 350px) {
+    .links{
+        top: 5vh;
+    }
+    .links a{
+        padding: 20px 25px;
+
+    }
+
+    .save-tigers{
+        top: 75vh;
+        right: 100px;
+    }
+}
